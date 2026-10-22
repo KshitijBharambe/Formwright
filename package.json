@@ -45,7 +45,7 @@
     "typescript": "^5.9.3",
     "@types/node": "^22.15.0"
   },
-  "description": "Local-first job application queue and verified autofill workspace",
+  "description": "Autofill job applications from your profile, résumé and saved answers. Review and submit in your browser.",
   "license": "MIT",
   "engines": {
     "node": ">=22"
