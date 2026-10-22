@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "description": "Curated synthetic contact-label evaluation; not real ATS accuracy evidence.",
+  "cases": [
+    {
+      "label": "Your code hosting profile",
+      "expectedKey": "github",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Link to your professional networking page",
+      "expectedKey": "linkedin",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Your electronic mail",
+      "expectedKey": "email",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Telephone contact number",
+      "expectedKey": "phone",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Your personal homepage",
+      "expectedKey": "website",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Town of residence",
+      "expectedKey": "city",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Your postal code",
+      "expectedKey": "postalCode",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Your complete name",
+      "expectedKey": "fullName",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Your family name",
+      "expectedKey": "lastName",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "Your given name",
+      "expectedKey": "firstName",
+      "slice": "paraphrase"
+    },
+    {
+      "label": "First name",
+      "expectedKey": "firstName",
+      "slice": "standard"
+    },
+    {
+      "label": "Last name",
+      "expectedKey": "lastName",
+      "slice": "standard"
+    },
+    {
+      "label": "Full name",
+      "expectedKey": "fullName",
+      "slice": "standard"
+    },
+    {
+      "label": "Email",
+      "expectedKey": "email",
+      "slice": "standard"
+    },
+    {
+      "label": "Phone number",
+      "expectedKey": "phone",
+      "slice": "standard"
+    },
+    {
+      "label": "City",
+      "expectedKey": "city",
+      "slice": "standard"
+    },
+    {
+      "label": "State",
+      "expectedKey": "state",
+      "slice": "standard"
+    },
+    {
+      "label": "Postal code",
+      "expectedKey": "postalCode",
+      "slice": "standard"
+    },
+    {
+      "label": "LinkedIn",
+      "expectedKey": "linkedin",
+      "slice": "standard"
+    },
+    {
+      "label": "GitHub",
+      "expectedKey": "github",
+      "slice": "standard"
+    },
+    {
+      "label": "Will you require visa sponsorship?",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "What is your citizenship?",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Which city are you willing to commute to?",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Preferred city for relocation",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Email for marketing consent",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Previous employer phone",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Reference phone",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "University email",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Date of birth and name",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Your name if you are not a citizen?",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Salary expectation",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    },
+    {
+      "label": "Describe why you want this role",
+      "expectedKey": null,
+      "slice": "critical_or_unsupported"
+    }
+  ]
+}

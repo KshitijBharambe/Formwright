@@ -1,0 +1,75 @@
+# User data (NEVER commit)
+profile.json
+resume.txt
+resume.pdf
+*.env
+.env.*
+!.env.example
+
+# Runtime artifacts
+*.db
+tailored_resumes/
+cover_letters/
+chrome-workers/
+apply-workers/
+apply_logs/
+logs/
+
+# MCP configs (per-machine)
+.mcp*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
+
+# Local TypeScript runner data and generated compatibility snapshot
+node_modules/
+.browser/
+.playwright-cli/
+config/profile.json
+config/answers.json
+config/simplify-rules.json
+data/jobs.txt
+resumes/
+output/
+
+# Local Notion database mapping
+config/notion.json
+
+# Optional local inference settings
+config/autofill.json
+
+# Shared application account credentials
+config/credentials.json
+config/credentials.json.tmp
+
+# All local config variants/backups; only reviewed templates are public
+config/*
+!config/*.example.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.pdf
+*.docx
+*.log
+*.bak
+*.backup

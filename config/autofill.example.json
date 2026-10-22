@@ -1,0 +1,7 @@
+{
+  "mode": "deterministic",
+  "baseUrl": "http://127.0.0.1:1234/v1",
+  "model": "",
+  "timeoutMs": 15000,
+  "maxCalls": 12
+}

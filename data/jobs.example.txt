@@ -1,0 +1,2 @@
+# One employer job/application URL per line.
+# Copy this file to data/jobs.txt, then add links you want to review.

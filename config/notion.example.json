@@ -1,0 +1,44 @@
+{
+  "token": "",
+  "databaseId": "",
+  "urlProperty": "URL",
+  "companyProperty": "Company",
+  "statusProperty": "Status",
+  "lifecycleProperty": "Lifecycle",
+  "filter": {
+    "and": [
+      {
+        "property": "Lifecycle",
+        "select": {
+          "equals": "Active"
+        }
+      },
+      {
+        "or": [
+          {
+            "property": "Status",
+            "select": {
+              "equals": "New"
+            }
+          },
+          {
+            "property": "Status",
+            "select": {
+              "equals": "Apply"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "sorts": [
+    {
+      "timestamp": "last_edited_time",
+      "direction": "descending"
+    },
+    {
+      "timestamp": "created_time",
+      "direction": "descending"
+    }
+  ]
+}

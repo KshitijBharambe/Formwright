@@ -1,0 +1,53 @@
+{
+  "name": "formwright",
+  "private": true,
+  "version": "0.6.0",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit && node --check web/dashboard.js && node --check web/theme.js",
+    "build": "tsc",
+    "test:build": "node scripts/test-built-evaluate.mjs && node scripts/test-options.mjs && node scripts/test-browser-review.mjs",
+    "run": "npm run build && npm run test:build && node dist/run.js",
+    "test:browser": "npm run build && node scripts/test-combobox.mjs",
+    "import:simplify": "node scripts/import-simplify.mjs",
+    "test:simplify": "npm run build && node scripts/test-simplify.mjs",
+    "test:sites": "npm run build && node scripts/test-sites.mjs",
+    "test:workday": "npm run build && node scripts/test-workday.mjs",
+    "test:notion": "npm run build && node scripts/test-notion.mjs",
+    "test:queue": "npm run build && node scripts/test-job-queue.mjs",
+    "test:entry": "npm run build && node scripts/test-ashby-entry.mjs && node scripts/test-apply-entry.mjs",
+    "test:upload": "npm run build && node scripts/test-upload-rerender.mjs",
+    "test:answers": "npm run build && node scripts/test-notion-answers.mjs && node scripts/test-answer-variants.mjs && node scripts/test-demographic-answers.mjs",
+    "test:resolution": "npm run build && node scripts/test-answer-resolution.mjs",
+    "test:braze": "npm run build && node scripts/test-braze-form.mjs",
+    "dashboard": "npm run build && node dist/dashboard.js",
+    "test:dashboard": "npm run build && node scripts/test-dashboard.mjs && node scripts/test-dashboard-workspace.mjs",
+    "test:llm": "npm run build && node scripts/test-local-resolver.mjs",
+    "test:robustness": "npm run build && node scripts/test-form-recovery.mjs",
+    "test:verification": "npm run build && node scripts/test-verification-engine.mjs",
+    "eval:llm": "npm run build && node scripts/eval-local-resolver.mjs",
+    "test:auth": "npm run build && node scripts/test-account-auth.mjs && node scripts/test-auth-configuration.mjs",
+    "test:parallel": "npm run build && node scripts/test-parallel.mjs",
+    "test:yc": "npm run build && node scripts/test-yc-entry.mjs && node scripts/test-yc-entry.mjs --login",
+    "test:choices": "npm run build && node scripts/test-choice-controls.mjs && node scripts/test-office-attendance.mjs",
+    "test:yc-fields": "npm run build && node scripts/test-yc-fields.mjs",
+    "test:lever": "npm run build && node scripts/test-lever.mjs",
+    "setup": "node scripts/setup.mjs",
+    "test": "npm run build && npm run test:build && node scripts/test-notion.mjs && node scripts/test-job-queue.mjs && node scripts/test-notion-answers.mjs && node scripts/test-dashboard.mjs && node scripts/test-dashboard-workspace.mjs",
+    "test:ui": "npm run build && node scripts/test-dashboard-ui.mjs",
+    "release:check": "node scripts/public-source.mjs",
+    "release:export": "node scripts/public-source.mjs --export"
+  },
+  "dependencies": {
+    "playwright": "^1.56.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22.15.0"
+  },
+  "description": "Local-first job application queue and verified autofill workspace",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}

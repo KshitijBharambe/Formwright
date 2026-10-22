@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { EventEmitter } from 'node:events';
+import { waitForReview } from '../dist/browser-review.js';
+const context = new EventEmitter();
+context.pages = () => [{}];
+let finished = false;
+const waiting = waitForReview(context).then(() => { finished = true; });
+await new Promise(resolve => setImmediate(resolve));
+assert.equal(finished, false, 'Review must keep the run alive');
+context.emit('close');
+await waiting;
+assert.equal(finished, true);
+assert.equal(context.listenerCount('close'), 0);
+context.pages = () => [];
+await waitForReview(context);
+console.log('Browser review lifetime tests passed.');
